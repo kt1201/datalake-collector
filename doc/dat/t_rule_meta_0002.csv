@@ -1,0 +1,4 @@
+"CNNC_MANAGE_NO","TABLE_ENG_NM","TABLE_KOREAN_NM","TABLE_DC","BR_DC","HASHTAG_CN","MNGR_NM","PART_COLS","WHERE_INFO_NM","INS_NUM_MAPPERS","INS_SPLIT_BY_COL","APD_WHERE","APD_CHK_COL","HIVE_TABLE_NM","BIGDATA_GTRN_AT","SCHDUL_APPLC_AT","GTHNLDN_MTH_CODE","GTHNLDN_MTH_NM","REGIST_DE","REGIST_EMPL_NO","UPDT_DE","UPDT_EMPL_NO"
+template1,getBeachLocationList,소재지별_바닷가_목록_조회,,,,,PART_BATCHDATE,,,,,,st_beach_location_list,Y,Y,000,"OPENAPI",,,,
+template2,DT_435001N_001,월간 국내카드승인실적,,,,,PART_BATCHDATE,,,,,,st_DT_435001N_001,Y,Y,000,"OPENAPI",,,,
+template3,Incheon_West_Restaurant,인천광역시 서구 맛집,,,,,PART_BATCHDATE,,,,,,st_Incheon_West_Restaurant,Y,Y,000,"OPENAPI",,,,

@@ -1,0 +1,17 @@
+파티션 생성 성공: st_kea_l001.t_daily_yyyymm
+파티션 없음: st_kea_l001.t_banner_link_mapping
+파티션 없음: st_kea_l001.t_binary
+파티션 없음: st_kea_l001.t_bookmark
+파티션 없음: st_kea_l001.t_code_mgmt
+파티션 생성 성공: st_kea_l001.t_eplog
+파티션 없음: st_kea_l001.t_groups
+파티션 생성 성공: st_kea_l001.t_link
+파티션 없음: st_kea_l001.t_link_user
+파티션 없음: st_kea_l001.t_noty
+파티션 없음: st_kea_l001.t_noty_recv
+파티션 없음: st_kea_l001.t_pnck_page
+파티션 없음: st_kea_l001.t_pnck_page_portlet_mapping
+파티션 없음: st_kea_l001.t_pnck_page_role
+파티션 없음: st_kea_l001.t_pnck_role
+파티션 없음: st_kea_l001.t_pnck_role_audit_log
+파티션 없음: st_kea_l001.t_pnck_theme

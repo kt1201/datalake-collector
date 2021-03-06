@@ -1,0 +1,3 @@
+Schemas: [[None, 'information_schema'], [None, 'pg_catalog'], [None, 'public']]
+Schemas: [[None, 'public']]
+메타 추출 성공: M001

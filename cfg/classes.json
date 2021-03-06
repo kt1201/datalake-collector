@@ -1,0 +1,77 @@
+{
+    "SQLite3": {
+        "code": "00",
+        "classpath": null,
+        "classname": "org.sqlite.JDBC",
+        "url": "jdbc:sqlite:{DB_SERVICE_NM}",
+        "sample": "SELECT * FROM ( {0} ) AS ALIAS LIMIT {1}"
+    },
+    "Oracle11": {
+        "code": "01",
+        "classpath": "lib/ojdbc6.jar",
+        "classname": "oracle.jdbc.OracleDriver",
+        "url": "jdbc:oracle:thin:@//{DB_1_SERVER_IP}:{DB_1_SERVER_PORT_NO}/{DB_SERVICE_NM}",
+        "sample": "SELECT * FROM ( {0} ) ALIAS WHERE ROWNUM <= {1}"
+    },
+    "Tibero6": {
+        "code": "02",
+        "classpath": "lib/tibero6-jdbc.jar",
+        "classname": "com.tmax.tibero.jdbc.TbDriver",
+        "url": "jdbc:tibero:thin:@{DB_1_SERVER_IP}:{DB_1_SERVER_PORT_NO}:{DB_SERVICE_NM}",
+        "sample": "SELECT * FROM ( {0} ) ALIAS WHERE ROWNUM <= {1}"
+    },
+    "MSSQL13": {
+        "code": "03",
+        "classpath": "lib/mssql-jdbc-8.2.2.jre8.jar",
+        "classname": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+        "url": "jdbc:sqlserver://{DB_1_SERVER_IP}:{DB_1_SERVER_PORT_NO};databaseName={DB_SERVICE_NM}",
+        "sample": "SELECT TOP {1} * FROM ( {0} ) AS ALIAS"
+    },
+    "Cubrid10": {
+        "code": "04",
+        "classpath": "lib/JDBC-10.2-latest-cubrid.jar",
+        "classname": "cubrid.jdbc.driver.CUBRIDDriver",
+        "url": "jdbc:CUBRID:{DB_1_SERVER_IP}:{DB_1_SERVER_PORT_NO}:{DB_SERVICE_NM}:::",
+        "sample": "SELECT * FROM ( {0} ) AS ALIAS LIMIT {1}"
+    },
+    "MySQL5": {
+        "code": "05",
+        "classpath": "lib/mysql-connector-java-5.1.49.jar",
+        "classname": "com.mysql.jdbc.Driver",
+        "url": "jdbc:mysql://{DB_1_SERVER_IP}:{DB_1_SERVER_PORT_NO}/{DB_SERVICE_NM}?useSSL=false",
+        "sample": "SELECT * FROM ( {0} ) AS ALIAS LIMIT {1}"
+    },
+    "PostgreSQL10": {
+        "code": "06",
+        "classpath": "lib/postgresql-42.2.16.jar",
+        "classname": "org.postgresql.Driver",
+        "url": "jdbc:postgresql://{DB_1_SERVER_IP}:{DB_1_SERVER_PORT_NO}/{DB_SERVICE_NM}",
+        "sample": "SELECT * FROM ( {0} ) AS ALIAS LIMIT {1}"
+    },
+    "ApacheHive": {
+        "code": "07",
+        "classpath": "lib/hive-jdbc-2.3.7-standalone.jar",
+        "classname": "org.apache.hive.jdbc.HiveDriver",
+        "url": "jdbc:hive2://{DB_1_SERVER_IP}:{DB_1_SERVER_PORT_NO}/{DB_SERVICE_NM}",
+        "sample": "SELECT * FROM ( {0} ) AS ALIAS LIMIT {1}"
+    },
+    "ClouderaHive": {
+        "code": "07",
+        "classpath": "lib/HiveJDBC42.jar:lib/hive-jdbc-2.3.7-standalone.jar",
+        "classname": "org.apache.hive.jdbc.HiveDriver",
+        "url": "jdbc:hive2://{DB_1_SERVER_IP}:{DB_1_SERVER_PORT_NO}/{DB_SERVICE_NM}",
+        "sample": "SELECT * FROM ( {0} ) AS ALIAS LIMIT {1}"
+    },
+    "SQLite": "SQLite3",
+    "Oracle": "Oracle11",
+    "Oracle10": "Oracle11",
+    "Tibero": "Tibero6",
+    "Tibero5SP1": "Tibero6",
+    "MSSQL": "MSSQL13",
+    "Cubrid": "Cubrid10",
+    "MySQL": "MySQL5",
+    "mariaDB": "MySQL5",
+    "mariaDB5": "MySQL5",
+    "PostgreSQL": "PostgreSQL10",
+    "Hive": "ApacheHive"
+}

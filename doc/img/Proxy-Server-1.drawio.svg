@@ -1,0 +1,72 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="553px" height="93px" viewBox="-0.5 -0.5 553 93" content="&lt;mxfile host=&quot;a92e20c0-927a-45c0-acac-7d24a9e5016c&quot; modified=&quot;2021-02-24T08:58:12.614Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36&quot; etag=&quot;4xCpLqsbwO4a8fHlMXVc&quot; scale=&quot;1&quot; border=&quot;16&quot; version=&quot;14.2.4&quot; type=&quot;embed&quot;&gt;&lt;diagram id=&quot;LhN-Vl4TSxNYWu8Gfxjm&quot; name=&quot;페이지-1&quot;&gt;3ZbbbtNAEIafZiS4KPIpiX0ZJ25BCFGIUKF3G3tiLzjeaL1JnD49u/G4PqVIIKRW9UU08+9xvvllB9zFtrqRbJd9Egnm4FhJBe4SHP14+tcIp1rwJkEtpJIntWS3woo/IIkWqXueYNmbqITIFd/1xVgUBcaqpzEpxbE/bSPy/qk7luJIWMUsH6t3PFFZrfrOrNXfI0+z5mR7SvWtWfwrlWJf0HnguJvzUw9vWbMXFVpmLBHHjuRG4C6kEKqOxPqnqc+xcrbWiGlPs7Lh2K7aVgvMdRuu61QHtLo3avEhComF6l7q+okF8uPm/svD1X0Yf0ORfl3dZbi+otscWL4ndhAtIfDA9yAKYW5DsIRoAX4Igb6SdY49E+vR0DGxM831+eFa6ig10RtfP28JkDo1TTljRXMZS086ZlzhasdiM3rULtRapraGka3DcXFU7wGlwqojUbE3KLao5ElPoVG3aRKZ2J1SfmwtYTdzso4dmnmMXJg+bu10u0OA/wK2O4L9eYeFVua3Hxq2PgS+CeYzCGyI5hD6EFrPDtN+cTC9C85dQBAYYMabU/CtPtqBbZ+Z6OTFEZ2MiQ4hYZHMzftZZ3HOypLHGkapmFRjuYMLK66+d+IfhvK7CWXLiqCfkxMlTyIuxV7G+Ic66NqY9D4S40Z0QE8ucG40iTlT/ND/tFyCTyfcCl6oTp/9fp89b9C/uh5a1X1/DzcaGiYYbKTbkKIabXT2wmPZ/26P2Suxh/s67TH63P03e+i0/UdTT2//NbrRbw==&lt;/diagram&gt;&lt;/mxfile&gt;" style="background-color: rgb(255, 255, 255);">
+    <defs/>
+    <g>
+        <rect x="216" y="16" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 46px; margin-left: 217px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                프록시 서버
+                                <br/>
+                                (8888)
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="276" y="50" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    프록시 서버...
+                </text>
+            </switch>
+        </g>
+        <rect x="16" y="16" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 46px; margin-left: 17px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                Open API 수집기
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="76" y="50" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Open API 수집기
+                </text>
+            </switch>
+        </g>
+        <rect x="416" y="16" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 46px; margin-left: 417px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                외부 API 서버
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="476" y="50" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    외부 API 서버
+                </text>
+            </switch>
+        </g>
+        <path d="M 342.37 46 L 409.63 46" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 337.12 46 L 344.12 42.5 L 342.37 46 L 344.12 49.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 414.88 46 L 407.88 49.5 L 409.63 46 L 407.88 42.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 142.37 46 L 209.63 46" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 137.12 46 L 144.12 42.5 L 142.37 46 L 144.12 49.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 214.88 46 L 207.88 49.5 L 209.63 46 L 207.88 42.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>

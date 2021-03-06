@@ -1,0 +1,935 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "==== Java 테스트 ====",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Version",
+            "request": "launch",
+            "mainClass": "kr.co.penta.datalake.version.Application",
+            "projectName": "datalake-collector"
+        },
+        {
+            "type": "java",
+            "name": "Cryptograph",
+            "request": "launch",
+            "mainClass": "kr.co.penta.datalake.common.Aes",
+            "args": [
+                "sample",
+                "aes:vh+GndIF8Up9K0/44LYTrA=="
+            ],
+            "projectName": "datalake-collector"
+        },
+        {
+            "type": "java",
+            "name": "Create Table",
+            "request": "launch",
+            "mainClass": "kr.co.penta.datalake.jdbc2json.Application",
+            "vmArgs": [
+                "-Djdbc.url=jdbc:sqlite:tmp/test.db",
+                "-Djdbc.check=SELECT 1"
+            ],
+            "args": [
+                "CREATE TABLE T1 ( I1 INTEGER, I2 TEXT )"
+            ],
+            "projectName": "datalake-collector"
+        },
+        {
+            "type": "java",
+            "name": "Insert Table",
+            "request": "launch",
+            "mainClass": "kr.co.penta.datalake.jdbc2json.Application",
+            "vmArgs": [
+                "-Djdbc.url=jdbc:sqlite:tmp/test.db",
+                "-Djdbc.check=SELECT 1"
+            ],
+            "args": [
+                "INSERT INTO T1 VALUES ( ?, ? )",
+                "[1000000000000000, null]"
+            ],
+            "projectName": "datalake-collector"
+        },
+        {
+            "name": "==== 설정 파일 생성 테스트 ====",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "설정 파일 생성(L001)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/buildcfg.py",
+            "args": [
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "설정 파일 생성(R001)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/buildcfg.py",
+            "args": [
+                "R001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "설정 파일 생성(template1)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/buildcfg.py",
+            "args": [
+                "template1"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "설정 파일 생성(template2)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/buildcfg.py",
+            "args": [
+                "template2"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "설정 파일 생성(template3)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/buildcfg.py",
+            "args": [
+                "template3"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "설정 생성",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/createcfg.py",
+            "args": [
+                "M001",
+                "01",
+                "PostgreSQL",
+                "127.0.0.1",
+                "5432",
+                "hadoop",
+                "",
+                "hadoop",
+                "public"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "메타 수집",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbcmeta.py",
+            "args": [
+                "M001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Rule 생성",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/buildrule.py",
+            "args": [
+                "M001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Rule 수정",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/updaterule.py",
+            "args": [
+                "M001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Rule 백업",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/backuprule.py",
+            "args": [
+                "M001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Rule 복구",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/restorerule.py",
+            "args": [
+                "M001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "설정 파일 생성(M001)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/buildcfg.py",
+            "args": [
+                "M001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "==== 쿼리 수행 ====",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "JDBC Version 조회",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbcversion.py",
+            "args": [
+                "L001",
+                "R001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "JDBC Shell",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbcshell.py",
+            "args": [
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive Shell",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hiveshell.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "==== 저장소 자동 생성 테스트 ====",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 테이블 생성",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivecreatetable.py",
+            "args": [
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 파티션 생성(20200101)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivecreatepartition.py",
+            "args": [
+                "20200101000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 파티션 생성(20200201)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivecreatepartition.py",
+            "args": [
+                "20200201000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 파티션 목록",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivelistpartition.py",
+            "args": [
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 파티션 정리(20200101)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hiveclearpartition.py",
+            "args": [
+                "20200101000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 파티션 삭제(20200101)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivedroppartition.py",
+            "args": [
+                "20200101000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 테이블 초기화",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivetruncatetable.py",
+            "args": [
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 테이블 삭제",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivedroptable.py",
+            "args": [
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "==== 수집/적재 테스트 ====",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 테이블 생성",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivecreatetable.py",
+            "args": [
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 파티션 생성(20200101)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivecreatepartition.py",
+            "args": [
+                "20200101000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "JDBC to SequenceFile 수집/적재",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbc2seqfile.py",
+            "args": [
+                "20200101000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 파티션 생성(20200201)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivecreatepartition.py",
+            "args": [
+                "20200201000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "CSV to SEQUENCEFILE 적재",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/csv2seqfile.py",
+            "args": [
+                "20200201000000",
+                "L001",
+                "test/t_eplog.csv",
+                "public.t_eplog"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "JDBC to JDBC 수집/적재",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbc2jdbc.py",
+            "args": [
+                "20200301000000",
+                "L001",
+                "public.t_eplog",
+                "R001",
+                "T_EPLOG"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 테이블 분석",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hiveanalyze.py",
+            "args": [
+                "20200101000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "JDBC 레코드 수",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbccount.py",
+            "args": [
+                "20200101000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 레코드 수",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivecount.py",
+            "args": [
+                "20200101000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "비식별화 검증",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbc2csv.py",
+            "args": [
+                "20200101000000",
+                "L001",
+                "public.t_eplog",
+                "test/out/t_eplog_301.out"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 적재 데이터 검증",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hive2csv.py",
+            "args": [
+                "20200101000000",
+                "L001",
+                "public.t_eplog",
+                "test/out/t_eplog_302.out"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "JDBC to JDBC 수집/적재 검증",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbc2csv.py",
+            "args": [
+                "20200301000000",
+                "R001",
+                "T_EPLOG",
+                "test/out/t_eplog_303.out"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "CSV to SEQUENCEFILE 적재 검증",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivequery.py",
+            "args": [
+                "L001",
+                "SELECT * FROM T_EPLOG WHERE PART_BATCHDATE = CAST(20200201000000 AS STRING)"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "JDBC to SequenceFile 적재 검증",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hiveverify.py",
+            "args": [
+                "20200101000000",
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Target 테이블 초기화",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbctruncatetable.py",
+            "args": [
+                "R001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Target 테이블 조회",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/jdbcquery.py",
+            "args": [
+                "R001",
+                "SELECT * FROM T_EPLOG"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 테이블 삭제",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivedroptable.py",
+            "args": [
+                "L001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "==== OPENAPI 테스트 ====",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "OPENAPI 적재(template1)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/openapi/template1.py",
+            "args": [
+                "20200101000000",
+                "template1",
+                "getBeachLocationList"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "OPENAPI 적재(template2)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/openapi/template2.py",
+            "args": [
+                "20200101000000",
+                "template2"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "OPENAPI 적재(template3)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/openapi/template3.py",
+            "args": [
+                "20200101000000",
+                "template3"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "OPENAPI 적재 검증(template1)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hiveverify.py",
+            "args": [
+                "20200101000000",
+                "template1"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "OPENAPI 적재 검증(template3)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hiveverify.py",
+            "args": [
+                "20200101000000",
+                "template3"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "HIVE to JDBC 수집/적재",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hive2jdbc.py",
+            "args": [
+                "template1"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 테이블 삭제(template1)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivedroptable.py",
+            "args": [
+                "template1"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 테이블 삭제(template2)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivedroptable.py",
+            "args": [
+                "template2"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hive 테이블 삭제(template3)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/hivedroptable.py",
+            "args": [
+                "template3"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "==== 배치 테스트 ====",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "헬스 체크",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/healthcheck.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "내부 배치",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/batchrun.py",
+            "args": [
+                "20200101000000",
+                "01",
+                "L001",
+                "M001"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "외부 배치",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/batchrun.py",
+            "args": [
+                "20200101000000",
+                "02",
+                "template1",
+                "template2",
+                "template3"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "일별 테이블 적재",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/load004.py",
+            "args": [
+                "20200101000000",
+                "L001",
+                "daily_%"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "배치 결과(내부)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/batchresult.py",
+            "args": [
+                "20200101000000",
+                "01"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "배치 결과(외부)",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/batchresult.py",
+            "args": [
+                "20200101000000",
+                "02"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "배치 검사",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/batchcheck.py",
+            "args": [
+                "20200101000000",
+                "L001",
+                "template"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "==== 기타 ====",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "암호",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "DATALAKE_COLLECTOR": "${workspaceFolder}"
+            },
+            "program": "${workspaceFolder}/src/secret.py",
+            "args": [
+                "sample",
+                "aes:vh+GndIF8Up9K0/44LYTrA=="
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "jdbc2json",
+            "request": "launch",
+            "mainClass": "kr.co.penta.datalake.jdbc2json.Application",
+            "vmArgs": [
+                "-Djdbc.fetchsize=2",
+                "-Djdbc.check=SELECT 1"
+            ],
+            "projectName": "datalake-collector"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "repository": {
+        "classname": "org.sqlite.JDBC",
+        "url": "jdbc:sqlite:sql/sqlite.db",
+        "username": null,
+        "password": null,
+        "check": "SELECT 1"
+    },
+    "namenode": {
+        "startswith": "hdfs://localhost:8020/",
+        "newvalue": "hdfs://localhost/"
+    },
+    "hive": {
+        "classpath": "lib/hive-jdbc-2.3.7-standalone.jar",
+        "classname": "org.apache.hive.jdbc.HiveDriver",
+        "url": "jdbc:hive2://localhost:10000/{HIVE_DB_NM}",
+        "username": null,
+        "password": null,
+        "check": "SELECT 1"
+    },
+    "condition": [
+        {
+            "BIGDATA_GTRN_AT": "Y"
+        },
+        {
+            "SCHDUL_APPLC_AT": "Y"
+        }
+    ],
+    "cntc_mthd_nm": {
+        "01": "내부 정형 데이터",
+        "02": "외부 정형 데이터"
+    },
+    "proxy": "http://localhost:8080"
+}

@@ -1,0 +1,1 @@
+.\mvnw clean package && cp target\datalake-collector-1.0.2-jar-with-dependencies.jar ..\lib\datalake-collector-1.0.2.jar

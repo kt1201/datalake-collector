@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ -n "$DATALAKE_COLLECTOR" ]; then
+    "$DATALAKE_COLLECTOR/src/batchresult.py" "$@"
+else
+    echo '쉘 환경변수 "DATALAKE_COLLECTOR"이 필요합니다'
+fi

@@ -1,0 +1,374 @@
+"L001","t_banner_link_mapping",1,"code_id","코드ID",,"코드ID","","varchar","32","CODE_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_banner_link_mapping",2,"link_id","링크ID",,"링크ID","","varchar","32","LINK_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_banner_link_mapping",3,"open_type","열리는유형",,"열리는유형","","bpchar","1","OPEN_TYPE","CHAR","Y","N","20200128","99999999","",""
+"L001","t_banner_link_mapping",4,"open_option","열리는형태",,"열리는형태","","varchar","1000","OPEN_OPTION","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_banner_link_mapping",5,"img_src","이미지경로",,"이미지경로","","varchar","500","IMG_SRC","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_banner_link_mapping",6,"sort_order","배너정렬순서",,"배너정렬순서","","int8","6","SORT_ORDER","BIGINT","Y","N","20200128","99999999","",""
+"L001","t_banner_link_mapping",7,"reg_id","등록자ID",,"등록자ID","","varchar","50","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_banner_link_mapping",8,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_binary",1,"binary_id","UNKNOWN",,"","","int8","","BINARY_ID","BIGINT","N","Y","20200128","99999999","",""
+"L001","t_binary",2,"binary_data","UNKNOWN",,"","","bytea","","BINARY_DATA","BINARY","Y","N","20200128","99999999","",""
+"L001","t_bookmark",1,"usr_id","사용자ID",,"사용자ID","","varchar","20","USR_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_bookmark",2,"fvr_id","북마크대상아이디",,"북마크대상아이디","","varchar","255","FVR_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_bookmark",3,"fvr_pid","북마크대상상위아이디",,"북마크대상상위아이디","","varchar","15","FVR_PID","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_bookmark",4,"fvr_nm","북마크대상명",,"북마크대상명","","varchar","255","FVR_NM","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_bookmark",5,"sort_order","북마크정렬순서",,"북마크정렬순서","","int8","9","SORT_ORDER","BIGINT","Y","N","20200128","99999999","",""
+"L001","t_bookmark",6,"reg_id","등록자ID *",,"등록자ID *","","varchar","20","REG_ID","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_bookmark",7,"reg_dt",,,"","","timestamp","11","REG_DT","TIMESTAMP","Y","N","20200128","99999999","",""
+"L001","t_bookmark",8,"upd_id","수정자ID *",,"수정자ID *","","varchar","20","UPD_ID","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_bookmark",9,"upd_dt",,,"","","timestamp","11","UPD_DT","TIMESTAMP","Y","N","20200128","99999999","",""
+"L001","t_code_mgmt",1,"grp_code_id","그룹코드ID",,"그룹코드ID","","varchar","32","GRP_CODE_ID","VARCHAR",,,"20200128","99999999","",""
+"L001","t_code_mgmt",2,"code_id","코드ID",,"코드ID","","varchar","32","CODE_ID","VARCHAR",,,"20200128","99999999","",""
+"L001","t_code_mgmt",3,"code_name","코드명",,"코드명","","varchar","150","CODE_NAME","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_code_mgmt",4,"code_desc","코드설명",,"코드설명","","varchar","250","CODE_DESC","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_code_mgmt",5,"use_yn","사용유무",,"사용유무","","varchar","1","USE_YN","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_code_mgmt",6,"reg_id","등록자ID",,"등록자ID","","varchar","20","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_code_mgmt",7,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_code_mgmt",8,"upd_id","수정자ID",,"수정자ID","","varchar","20","UPD_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_code_mgmt",9,"upd_dt","수정일자시간",,"수정일자시간","","timestamp","6","UPD_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_eplog",1,"flgcd","구분",,"구분","","varchar","32","FLGCD","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_eplog",2,"flgcd_rstvl","구분값",,"구분값","","varchar","255","FLGCD_RSTVL","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_eplog",3,"ca_uri","호출URI",,"호출URI","","varchar","1500","CA_URI","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_eplog",4,"usr_ip","사용자IP",,"사용자IP","","varchar","30","USR_IP","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_eplog",5,"usr_id","사용자ID",,"사용자ID","Y","varchar","20","USR_ID","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_eplog",6,"yr","년도",,"년도","","int8","10","YR","BIGINT","N","N","20200128","99999999","",""
+"L001","t_eplog",7,"yymm","년월",,"년월","","int8","10","YYMM","BIGINT","N","N","20200128","99999999","",""
+"L001","t_eplog",8,"yymmdd","년월일",,"년월일","","int8","10","YYMMDD","BIGINT","N","N","20200128","99999999","",""
+"L001","t_eplog",9,"yymmddhh","년월일시간",,"년월일시간","","int8","10","YYMMDDHH","BIGINT","N","N","20200128","99999999","",""
+"L001","t_eplog",10,"reg_id","등록자ID",,"등록자ID","","varchar","20","REG_ID","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_eplog",11,"reg_dt","입력일시",,"입력일시","","timestamp","11","REG_DT","TIMESTAMP","Y","N","20200128","99999999","",""
+"L001","t_eplog",12,"upd_id","수정자ID",,"수정자ID","","varchar","20","UPD_ID","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_eplog",13,"upd_dt","수정일시",,"수정일시","","timestamp","11","UPD_DT","TIMESTAMP","Y","N","20200128","99999999","",""
+"L001","t_groups",1,"orncd","조직코드",,"조직코드","","varchar","10","ORNCD","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_groups",2,"orn_stcd","조직상태",,"조직상태","","varchar","10","ORN_STCD","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_groups",3,"ornnm","조직명",,"조직명","","varchar","100","ORNNM","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_groups",4,"same_lvl_seqno","동일레벨순번",,"동일레벨순번","","int8","6","SAME_LVL_SEQNO","BIGINT","N","N","20200128","99999999","",""
+"L001","t_groups",5,"amg_orncdyn","가상조직코드 유무",,"가상조직코드 유무","","varchar","1","AMG_ORNCDYN","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_groups",6,"ppr_orncd","상위조직코드",,"상위조직코드","","varchar","10","PPR_ORNCD","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_groups",7,"orn_flgcd","조직구분코드",,"조직구분코드","","varchar","10","ORN_FLGCD","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_groups",8,"orn_tpcd","조직유형코드",,"조직유형코드","","varchar","10","ORN_TPCD","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_groups",9,"orn_spcd","기관특성코드",,"기관특성코드","","varchar","10","ORN_SPCD","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_groups",10,"orn_rl_flgcd","기관실제구분코드",,"기관실제구분코드","","varchar","10","ORN_RL_FLGCD","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_groups",11,"orn_lvl","조직레벨",,"조직레벨","","int8","6","ORN_LVL","BIGINT","Y","N","20200128","99999999","",""
+"L001","t_groups",12,"bzp_tpcd","영업소유형코드",,"영업소유형코드","","varchar","10","BZP_TPCD","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_groups",13,"reg_id","등록자ID*",,"등록자ID*","","varchar","20","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_groups",14,"reg_dt","등록일자시간*",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_groups",15,"upd_id","수정자ID*",,"수정자ID*","","varchar","20","UPD_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_groups",16,"upd_dt","수정일자시간*",,"등록일자시간","","timestamp","6","UPD_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_link",1,"link_id","시스템링크ID",,"시스템링크ID","","varchar","32","LINK_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_link",2,"link_catg","시스템카테고리",,"시스템카테고리","","varchar","32","LINK_CATG","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_link",3,"link_name","링크명",,"링크명","","varchar","150","LINK_NAME","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_link",4,"link_desc","링크설명",,"링크설명","","varchar","1000","LINK_DESC","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_link",5,"link_url","링크주소",,"링크주소","","varchar","1000","LINK_URL","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_link",6,"link_style","링크스타일",,"링크스타일","","varchar","255","LINK_STYLE","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_link",7,"link_keyword","링크키워드",,"링크키워드","","varchar","1000","LINK_KEYWORD","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_link",8,"link_role","링크권한 ",,"링크권한 ","","varchar","4000","LINK_ROLE","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_link",9,"use_yn","사용유무",,"사용유무","","bpchar","1","USE_YN","CHAR","N","N","20200128","99999999","",""
+"L001","t_link",10,"sdate","시작일",,"시작일","","int8","10","SDATE","BIGINT","Y","N","20200128","99999999","",""
+"L001","t_link",11,"edate","종료일",,"종료일","","int8","10","EDATE","BIGINT","Y","N","20200128","99999999","",""
+"L001","t_link",12,"open_type","열리는타입",,"열리는타입","","bpchar","1","OPEN_TYPE","CHAR","Y","N","20200128","99999999","",""
+"L001","t_link",13,"open_option","열리는형태",,"열리는형태","","varchar","1000","OPEN_OPTION","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_link",14,"img_src","이미지주소",,"이미지주소","","varchar","500","IMG_SRC","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_link",15,"reg_id","등록자ID",,"등록자ID","","varchar","20","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_link",16,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_link",17,"upd_id","수정자ID",,"수정자ID","","varchar","20","UPD_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_link",18,"upd_dt","수정일자시간",,"수정일자시간","","timestamp","6","UPD_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_link_user",1,"link_id","링크ID",,"링크ID","","varchar","32","LINK_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_link_user",2,"color","색상",,"색상","","varchar","32","COLOR","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_link_user",3,"page_no","페이지번호",,"페이지번호","","int8","9","PAGE_NO","BIGINT","Y","N","20200128","99999999","",""
+"L001","t_link_user",4,"sort_order","화면표시순서",,"화면표시순서","","int8","6","SORT_ORDER","BIGINT","Y","N","20200128","99999999","",""
+"L001","t_link_user",5,"reg_id","등록자ID",,"등록자ID","","varchar","50","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_link_user",6,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_noty",1,"noty_id","알림ID",,"알림ID","","varchar","32","NOTY_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_noty",2,"noty_type","알림유형",,"알림유형","","bpchar","2","NOTY_TYPE","CHAR","Y","N","20200128","99999999","",""
+"L001","t_noty",3,"snd_sys_code","발송시스템",,"발송시스템","","varchar","10","SND_SYS_CODE","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_noty",4,"msg_txt","알림메세지",,"알림메세지","","varchar","4000","MSG_TXT","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_noty",5,"act_type","열리는유형",,"열리는유형","","bpchar","1","ACT_TYPE","CHAR","Y","N","20200128","99999999","",""
+"L001","t_noty",6,"act_uri","열리는주소",,"열리는주소","","varchar","256","ACT_URI","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_noty",7,"act_data","연계데이터",,"연계데이터","","varchar","4000","ACT_DATA","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_noty",8,"act_option","열리는옵션",,"열리는옵션","","varchar","4000","ACT_OPTION","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_noty",9,"send_id","발송자ID",,"발송자ID","","varchar","20","SEND_ID","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_noty",10,"send_dt","발송시간",,"발송시간","","date","","SEND_DT","DATE","Y","N","20200128","99999999","",""
+"L001","t_noty",11,"reg_id","등록자ID",,"등록자ID","","varchar","20","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_noty",12,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_noty",13,"upd_id","수정자ID",,"수정자ID","","varchar","20","UPD_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_noty",14,"upd_dt","수정일자시간",,"등록일자시간","","timestamp","6","UPD_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_noty_recv",1,"noty_id","알림ID",,"알림ID","","varchar","32","NOTY_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_noty_recv",2,"recv_id","받는사용자ID",,"받는사용자ID","","varchar","50","RECV_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_noty_recv",3,"recv_dt","받은날짜",,"받은날짜","","date","","RECV_DT","DATE","Y","N","20200128","99999999","",""
+"L001","t_noty_recv",4,"view_yn","읽음유무",,"읽음유무","","bpchar","1","VIEW_YN","CHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_page",1,"portal_id","포탈ID",,"포탈ID","","varchar","36","PORTAL_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_page",2,"page_id","페이지ID",,"페이지ID","","varchar","36","PAGE_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_page",3,"page_uid","페이지UID",,"페이지UID","","varchar","36","PAGE_UID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_page",4,"parent_page_id","상위페이지ID",,"상위페이지ID","","varchar","36","PARENT_PAGE_ID","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_page",5,"page_lang_key","페이지LANG_KEY",,"페이지LANG_KEY","","varchar","255","PAGE_LANG_KEY","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_page",6,"page_name","페이지명",,"페이지명","","varchar","255","PAGE_NAME","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_page",7,"theme_id","테마ID",,"테마ID","","varchar","36","THEME_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_page",8,"layout_id","레이이웃ID",,"레이이웃ID","","varchar","36","LAYOUT_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_page",9,"use_yn","사용유무",,"사용유무","","bpchar","1","USE_YN","CHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_page",10,"sort_order","정렬순서",,"정렬순서","","int8","6","SORT_ORDER","BIGINT","Y","N","20200128","99999999","",""
+"L001","t_pnck_page",11,"reg_id","등록자ID",,"등록자ID","","varchar","255","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_page",12,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_pnck_page",13,"upd_id","수정자ID",,"수정자ID","","varchar","255","UPD_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_page",14,"upd_dt","수정일자시간",,"수정일자시간","","timestamp","6","UPD_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_pnck_page_portlet_mapping",1,"portal_id","포탈ID",,"포탈ID","","varchar","36","PORTAL_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_page_portlet_mapping",2,"page_id","페이지ID",,"페이지ID","","varchar","36","PAGE_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_page_portlet_mapping",3,"container_id","컨테이너ID",,"컨테이너ID","","varchar","100","CONTAINER_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_page_portlet_mapping",4,"portlet_id","포틀릿ID",,"포틀릿ID","","varchar","36","PORTLET_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_page_portlet_mapping",5,"prev_portlet_id","이전포틀릿ID",,"이전포틀릿ID","","varchar","36","PREV_PORTLET_ID","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_page_portlet_mapping",6,"sort_order","정렬순서",,"정렬순서","","int8","6","SORT_ORDER","BIGINT","Y","N","20200128","99999999","",""
+"L001","t_pnck_page_portlet_mapping",7,"reg_id","등록자ID",,"등록자ID","","varchar","20","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_page_portlet_mapping",8,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_pnck_page_role",1,"page_id","페이지ID",,"페이지ID","","varchar","36","PAGE_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_page_role",2,"role_info","ROLE정보",,"ROLE정보","","varchar","255","ROLE_INFO","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_page_role",3,"auth_type","AUTH타입",,"AUTH타입","","varchar","2","AUTH_TYPE","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_page_role",4,"reg_id","등록자ID",,"등록자ID","","varchar","255","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_page_role",5,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_pnck_role",1,"role_id","권한ID",,"권한ID","","varchar","36","ROLE_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_role",2,"role_name","권한명",,"권한명","","varchar","255","ROLE_NAME","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_role",3,"role_desc","롤설명",,"롤설명","","varchar","1000","ROLE_DESC","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_role",4,"reg_id","등록자ID",,"등록자ID","","varchar","20","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_role",5,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_pnck_role",6,"upd_id","수정자ID",,"수정자ID","","varchar","20","UPD_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_role",7,"upd_dt","수정일자시간",,"수정일자시간","","timestamp","6","UPD_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_pnck_role_audit_log",1,"cont_id","컨텐트ID",,"컨텐트ID","","varchar","36","CONT_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_role_audit_log",2,"role_info","권한정보",,"권한정보","","varchar","100","ROLE_INFO","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_role_audit_log",3,"cont_type","컨텐트유형",,"컨텐트유형","","bpchar","1","CONT_TYPE","CHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_role_audit_log",4,"act_type","실행유형",,"실행유형","","bpchar","1","ACT_TYPE","CHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_role_audit_log",5,"usr_id","사용자ID",,"사용자ID","Y","varchar","32","USR_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_role_audit_log",6,"usr_ip","사용자IP",,"사용자IP","","varchar","40","USR_IP","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_role_audit_log",7,"reg_id","등록자ID",,"등록자ID","","varchar","255","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_role_audit_log",8,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_pnck_theme",1,"theme_id","테마ID",,"테마ID","","varchar","36","THEME_ID","VARCHAR","N","Y","20200128","99999999","",""
+"L001","t_pnck_theme",2,"theme_name","테마명",,"테마명","","varchar","255","THEME_NAME","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_theme",3,"theme_path","테마소스위치",,"테마소스위치","","varchar","255","THEME_PATH","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_theme",4,"theme_img","테마이미지자원",,"테마이미지자원","","varchar","255","THEME_IMG","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_theme",5,"theme_desc","테마설명",,"테마설명","","varchar","2000","THEME_DESC","VARCHAR","Y","N","20200128","99999999","",""
+"L001","t_pnck_theme",6,"default_yn","기본사용유무",,"기본사용유무","","bpchar","1","DEFAULT_YN","CHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_theme",7,"reg_id","등록자ID",,"등록자ID","","varchar","20","REG_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_theme",8,"reg_dt","등록일자시간",,"등록일자시간","","timestamp","6","REG_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","t_pnck_theme",9,"upd_id","수정자ID",,"수정자ID","","varchar","20","UPD_ID","VARCHAR","N","N","20200128","99999999","",""
+"L001","t_pnck_theme",10,"upd_dt","수정일자시간",,"수정일자시간","","timestamp","6","UPD_DT","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","daily_%",1,"t","일시",,"일시","","timestamp","","T","TIMESTAMP","N","N","20200128","99999999","",""
+"L001","daily_%",1,"v","값",,"값","","text","","V","STRING","N","N","20200128","99999999","",""
+R001,T_BANNER_LINK_MAPPING,1,CODE_ID,"코드ID",,"코드ID",,VARCHAR,32,CODE_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_BANNER_LINK_MAPPING,2,LINK_ID,"링크ID",,"링크ID",,VARCHAR,32,LINK_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_BANNER_LINK_MAPPING,3,OPEN_TYPE,"열리는유형",,"열리는유형",,CHAR,1,OPEN_TYPE,CHAR,Y,N,20200128,99999999,,
+R001,T_BANNER_LINK_MAPPING,4,OPEN_OPTION,"열리는형태",,"열리는형태",,VARCHAR,1000,OPEN_OPTION,VARCHAR,Y,N,20200128,99999999,,
+R001,T_BANNER_LINK_MAPPING,5,IMG_SRC,"이미지경로",,"이미지경로",,VARCHAR,500,IMG_SRC,VARCHAR,Y,N,20200128,99999999,,
+R001,T_BANNER_LINK_MAPPING,6,SORT_ORDER,"배너정렬순서",,"배너정렬순서",,BIGINT,6,SORT_ORDER,BIGINT,Y,N,20200128,99999999,,
+R001,T_BANNER_LINK_MAPPING,7,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,50,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_BANNER_LINK_MAPPING,8,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_BOOKMARK,1,USR_ID,"사용자ID",,"사용자ID",,VARCHAR,20,USR_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_BOOKMARK,2,FVR_ID,"북마크대상아이디",,"북마크대상아이디",,VARCHAR,255,FVR_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_BOOKMARK,3,FVR_PID,"북마크대상상위아이디",,"북마크대상상위아이디",,VARCHAR,15,FVR_PID,VARCHAR,Y,N,20200128,99999999,,
+R001,T_BOOKMARK,4,FVR_NM,"북마크대상명",,"북마크대상명",,VARCHAR,255,FVR_NM,VARCHAR,Y,N,20200128,99999999,,
+R001,T_BOOKMARK,5,SORT_ORDER,"북마크정렬순서",,"북마크정렬순서",,BIGINT,9,SORT_ORDER,BIGINT,Y,N,20200128,99999999,,
+R001,T_BOOKMARK,6,REG_ID,"등록자ID *",,"등록자ID *",,VARCHAR,20,REG_ID,VARCHAR,Y,N,20200128,99999999,,
+R001,T_BOOKMARK,7,REG_DT,REG_DT,,REG_DT,,TIMESTAMP,11,REG_DT,TIMESTAMP,Y,N,20200128,99999999,,
+R001,T_BOOKMARK,8,UPD_ID,"수정자ID *",,"수정자ID *",,VARCHAR,20,UPD_ID,VARCHAR,Y,N,20200128,99999999,,
+R001,T_BOOKMARK,9,UPD_DT,UPD_DT,,UPD_DT,,TIMESTAMP,11,UPD_DT,TIMESTAMP,Y,N,20200128,99999999,,
+R001,T_CODE_MGMT,1,GRP_CODE_ID,"그룹코드ID",,"그룹코드ID",,VARCHAR,32,GRP_CODE_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_CODE_MGMT,2,CODE_ID,"코드ID",,"코드ID",,VARCHAR,32,CODE_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_CODE_MGMT,3,CODE_NAME,"코드명",,"코드명",,VARCHAR,150,CODE_NAME,VARCHAR,Y,N,20200128,99999999,,
+R001,T_CODE_MGMT,4,CODE_DESC,"코드설명",,"코드설명",,VARCHAR,250,CODE_DESC,VARCHAR,Y,N,20200128,99999999,,
+R001,T_CODE_MGMT,5,USE_YN,"사용유무",,"사용유무",,VARCHAR,1,USE_YN,VARCHAR,Y,N,20200128,99999999,,
+R001,T_CODE_MGMT,6,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,20,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_CODE_MGMT,7,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_CODE_MGMT,8,UPD_ID,"수정자ID",,"수정자ID",,VARCHAR,20,UPD_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_CODE_MGMT,9,UPD_DT,"수정일자시간",,"수정일자시간",,TIMESTAMP,6,UPD_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_EPLOG,1,FLGCD,"구분",,"구분",,VARCHAR,32,FLGCD,VARCHAR,N,N,20200128,99999999,,
+R001,T_EPLOG,2,FLGCD_RSTVL,"구분값",,"구분값",,VARCHAR,255,FLGCD_RSTVL,VARCHAR,N,N,20200128,99999999,,
+R001,T_EPLOG,3,CA_URI,"호출URI",,"호출URI",,VARCHAR,1500,CA_URI,VARCHAR,Y,N,20200128,99999999,,
+R001,T_EPLOG,4,USR_IP,"사용자IP",,"사용자IP",,VARCHAR,30,USR_IP,VARCHAR,Y,N,20200128,99999999,,
+R001,T_EPLOG,5,USR_ID,"사용자ID",,"사용자ID",Y,VARCHAR,20,USR_ID,VARCHAR,Y,N,20200128,99999999,,
+R001,T_EPLOG,6,YR,"년도",,"년도",,BIGINT,10,YR,BIGINT,N,N,20200128,99999999,,
+R001,T_EPLOG,7,YYMM,"년월",,"년월",,BIGINT,10,YYMM,STRING,N,N,20200128,99999999,,
+R001,T_EPLOG,8,YYMMDD,"년월일",,"년월일",,BIGINT,10,YYMMDD,BIGINT,N,N,20200128,99999999,,
+R001,T_EPLOG,9,YYMMDDHH,"년월일시간",,"년월일시간",,BIGINT,10,YYMMDDHH,BIGINT,N,N,20200128,99999999,,
+R001,T_EPLOG,10,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,20,REG_ID,VARCHAR,Y,N,20200128,99999999,,
+R001,T_EPLOG,11,REG_DT,"입력일시",,"입력일시",,TIMESTAMP,11,REG_DT,TIMESTAMP,Y,N,20200128,99999999,,
+R001,T_EPLOG,12,UPD_ID,"수정자ID",,"수정자ID",,VARCHAR,20,UPD_ID,VARCHAR,Y,N,20200128,99999999,,
+R001,T_EPLOG,13,UPD_DT,"수정일시",,"수정일시",,TIMESTAMP,11,UPD_DT,TIMESTAMP,Y,N,20200128,99999999,,
+R001,T_GROUPS,1,ORNCD,"조직코드",,"조직코드",,VARCHAR,10,ORNCD,VARCHAR,N,Y,20200128,99999999,,
+R001,T_GROUPS,2,ORN_STCD,"조직상태",,"조직상태",,VARCHAR,10,ORN_STCD,VARCHAR,N,N,20200128,99999999,,
+R001,T_GROUPS,3,ORNNM,"조직명",,"조직명",,VARCHAR,100,ORNNM,VARCHAR,N,N,20200128,99999999,,
+R001,T_GROUPS,4,SAME_LVL_SEQNO,"동일레벨순번",,"동일레벨순번",,BIGINT,6,SAME_LVL_SEQNO,BIGINT,N,N,20200128,99999999,,
+R001,T_GROUPS,5,AMG_ORNCDYN,"가상조직코드 유무",,"가상조직코드 유무",,VARCHAR,1,AMG_ORNCDYN,VARCHAR,Y,N,20200128,99999999,,
+R001,T_GROUPS,6,PPR_ORNCD,"상위조직코드",,"상위조직코드",,VARCHAR,10,PPR_ORNCD,VARCHAR,N,N,20200128,99999999,,
+R001,T_GROUPS,7,ORN_FLGCD,"조직구분코드",,"조직구분코드",,VARCHAR,10,ORN_FLGCD,VARCHAR,Y,N,20200128,99999999,,
+R001,T_GROUPS,8,ORN_TPCD,"조직유형코드",,"조직유형코드",,VARCHAR,10,ORN_TPCD,VARCHAR,Y,N,20200128,99999999,,
+R001,T_GROUPS,9,ORN_SPCD,"기관특성코드",,"기관특성코드",,VARCHAR,10,ORN_SPCD,VARCHAR,Y,N,20200128,99999999,,
+R001,T_GROUPS,10,ORN_RL_FLGCD,"기관실제구분코드",,"기관실제구분코드",,VARCHAR,10,ORN_RL_FLGCD,VARCHAR,Y,N,20200128,99999999,,
+R001,T_GROUPS,11,ORN_LVL,"조직레벨",,"조직레벨",,BIGINT,6,ORN_LVL,BIGINT,Y,N,20200128,99999999,,
+R001,T_GROUPS,12,BZP_TPCD,"영업소유형코드",,"영업소유형코드",,VARCHAR,10,BZP_TPCD,VARCHAR,Y,N,20200128,99999999,,
+R001,T_GROUPS,13,REG_ID,"등록자ID*",,"등록자ID*",,VARCHAR,20,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_GROUPS,14,REG_DT,"등록일자시간*",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_GROUPS,15,UPD_ID,"수정자ID*",,"수정자ID*",,VARCHAR,20,UPD_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_GROUPS,16,UPD_DT,"수정일자시간*",,"등록일자시간",,TIMESTAMP,6,UPD_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_LINK,1,LINK_ID,"시스템링크ID",,"시스템링크ID",,VARCHAR,32,LINK_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_LINK,2,LINK_CATG,"시스템카테고리",,"시스템카테고리",,VARCHAR,32,LINK_CATG,VARCHAR,N,Y,20200128,99999999,,
+R001,T_LINK,3,LINK_NAME,"링크명",,"링크명",,VARCHAR,150,LINK_NAME,VARCHAR,Y,N,20200128,99999999,,
+R001,T_LINK,4,LINK_DESC,"링크설명",,"링크설명",,VARCHAR,1000,LINK_DESC,VARCHAR,Y,N,20200128,99999999,,
+R001,T_LINK,5,LINK_URL,"링크주소",,"링크주소",,VARCHAR,1000,LINK_URL,VARCHAR,Y,N,20200128,99999999,,
+R001,T_LINK,6,LINK_STYLE,"링크스타일",,"링크스타일",,VARCHAR,255,LINK_STYLE,VARCHAR,Y,N,20200128,99999999,,
+R001,T_LINK,7,LINK_KEYWORD,"링크키워드",,"링크키워드",,VARCHAR,1000,LINK_KEYWORD,VARCHAR,Y,N,20200128,99999999,,
+R001,T_LINK,8,LINK_ROLE,"링크권한 ",,"링크권한 ",,VARCHAR,4000,LINK_ROLE,VARCHAR,Y,N,20200128,99999999,,
+R001,T_LINK,9,USE_YN,"사용유무",,"사용유무",,CHAR,1,USE_YN,CHAR,N,N,20200128,99999999,,
+R001,T_LINK,10,SDATE,"시작일",,"시작일",,BIGINT,10,SDATE,BIGINT,Y,N,20200128,99999999,,
+R001,T_LINK,11,EDATE,"종료일",,"종료일",,BIGINT,10,EDATE,BIGINT,Y,N,20200128,99999999,,
+R001,T_LINK,12,OPEN_TYPE,"열리는타입",,"열리는타입",,CHAR,1,OPEN_TYPE,CHAR,Y,N,20200128,99999999,,
+R001,T_LINK,13,OPEN_OPTION,"열리는형태",,"열리는형태",,VARCHAR,1000,OPEN_OPTION,VARCHAR,Y,N,20200128,99999999,,
+R001,T_LINK,14,IMG_SRC,"이미지주소",,"이미지주소",,VARCHAR,500,IMG_SRC,VARCHAR,Y,N,20200128,99999999,,
+R001,T_LINK,15,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,20,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_LINK,16,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_LINK,17,UPD_ID,"수정자ID",,"수정자ID",,VARCHAR,20,UPD_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_LINK,18,UPD_DT,"수정일자시간",,"수정일자시간",,TIMESTAMP,6,UPD_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_LINK_USER,1,LINK_ID,"링크ID",,"링크ID",,VARCHAR,32,LINK_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_LINK_USER,2,COLOR,"색상",,"색상",,VARCHAR,32,COLOR,VARCHAR,Y,N,20200128,99999999,,
+R001,T_LINK_USER,3,PAGE_NO,"페이지번호",,"페이지번호",,BIGINT,9,PAGE_NO,BIGINT,Y,N,20200128,99999999,,
+R001,T_LINK_USER,4,SORT_ORDER,"화면표시순서",,"화면표시순서",,BIGINT,6,SORT_ORDER,BIGINT,Y,N,20200128,99999999,,
+R001,T_LINK_USER,5,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,50,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_LINK_USER,6,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_NOTY,1,NOTY_ID,"알림ID",,"알림ID",,VARCHAR,32,NOTY_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_NOTY,2,NOTY_TYPE,"알림유형",,"알림유형",,CHAR,2,NOTY_TYPE,CHAR,Y,N,20200128,99999999,,
+R001,T_NOTY,3,SND_SYS_CODE,"발송시스템",,"발송시스템",,VARCHAR,10,SND_SYS_CODE,VARCHAR,Y,N,20200128,99999999,,
+R001,T_NOTY,4,MSG_TXT,"알림메세지",,"알림메세지",,VARCHAR,4000,MSG_TXT,VARCHAR,Y,N,20200128,99999999,,
+R001,T_NOTY,5,ACT_TYPE,"열리는유형",,"열리는유형",,CHAR,1,ACT_TYPE,CHAR,Y,N,20200128,99999999,,
+R001,T_NOTY,6,ACT_URI,"열리는주소",,"열리는주소",,VARCHAR,256,ACT_URI,VARCHAR,Y,N,20200128,99999999,,
+R001,T_NOTY,7,ACT_DATA,"연계데이터",,"연계데이터",,VARCHAR,4000,ACT_DATA,VARCHAR,Y,N,20200128,99999999,,
+R001,T_NOTY,8,ACT_OPTION,"열리는옵션",,"열리는옵션",,VARCHAR,4000,ACT_OPTION,VARCHAR,Y,N,20200128,99999999,,
+R001,T_NOTY,9,SEND_ID,"발송자ID",,"발송자ID",,VARCHAR,20,SEND_ID,VARCHAR,Y,N,20200128,99999999,,
+R001,T_NOTY,10,SEND_DT,"발송시간",,"발송시간",,DATE,,SEND_DT,DATE,Y,N,20200128,99999999,,
+R001,T_NOTY,11,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,20,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_NOTY,12,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_NOTY,13,UPD_ID,"수정자ID",,"수정자ID",,VARCHAR,20,UPD_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_NOTY,14,UPD_DT,"수정일자시간",,"등록일자시간",,TIMESTAMP,6,UPD_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_NOTY_RECV,1,NOTY_ID,"알림ID",,"알림ID",,VARCHAR,32,NOTY_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_NOTY_RECV,2,RECV_ID,"받는사용자ID",,"받는사용자ID",,VARCHAR,50,RECV_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_NOTY_RECV,3,RECV_DT,"받은날짜",,"받은날짜",,DATE,,RECV_DT,DATE,Y,N,20200128,99999999,,
+R001,T_NOTY_RECV,4,VIEW_YN,"읽음유무",,"읽음유무",,CHAR,1,VIEW_YN,CHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_PAGE,1,PORTAL_ID,"포탈ID",,"포탈ID",,VARCHAR,36,PORTAL_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_PAGE,2,PAGE_ID,"페이지ID",,"페이지ID",,VARCHAR,36,PAGE_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_PAGE,3,PAGE_UID,"페이지UID",,"페이지UID",,VARCHAR,36,PAGE_UID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE,4,PARENT_PAGE_ID,"상위페이지ID",,"상위페이지ID",,VARCHAR,36,PARENT_PAGE_ID,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_PAGE,5,PAGE_LANG_KEY,"페이지LANG_KEY",,"페이지LANG_KEY",,VARCHAR,255,PAGE_LANG_KEY,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_PAGE,6,PAGE_NAME,"페이지명",,"페이지명",,VARCHAR,255,PAGE_NAME,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_PAGE,7,THEME_ID,"테마ID",,"테마ID",,VARCHAR,36,THEME_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE,8,LAYOUT_ID,"레이이웃ID",,"레이이웃ID",,VARCHAR,36,LAYOUT_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE,9,USE_YN,"사용유무",,"사용유무",,CHAR,1,USE_YN,CHAR,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE,10,SORT_ORDER,"정렬순서",,"정렬순서",,BIGINT,6,SORT_ORDER,BIGINT,Y,N,20200128,99999999,,
+R001,T_PNCK_PAGE,11,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,255,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE,12,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE,13,UPD_ID,"수정자ID",,"수정자ID",,VARCHAR,255,UPD_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE,14,UPD_DT,"수정일자시간",,"수정일자시간",,TIMESTAMP,6,UPD_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE_PORTLET_MAPPING,1,PORTAL_ID,"포탈ID",,"포탈ID",,VARCHAR,36,PORTAL_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_PAGE_PORTLET_MAPPING,2,PAGE_ID,"페이지ID",,"페이지ID",,VARCHAR,36,PAGE_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_PAGE_PORTLET_MAPPING,3,CONTAINER_ID,"컨테이너ID",,"컨테이너ID",,VARCHAR,100,CONTAINER_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_PAGE_PORTLET_MAPPING,4,PORTLET_ID,"포틀릿ID",,"포틀릿ID",,VARCHAR,36,PORTLET_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_PAGE_PORTLET_MAPPING,5,PREV_PORTLET_ID,"이전포틀릿ID",,"이전포틀릿ID",,VARCHAR,36,PREV_PORTLET_ID,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_PAGE_PORTLET_MAPPING,6,SORT_ORDER,"정렬순서",,"정렬순서",,BIGINT,6,SORT_ORDER,BIGINT,Y,N,20200128,99999999,,
+R001,T_PNCK_PAGE_PORTLET_MAPPING,7,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,20,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE_PORTLET_MAPPING,8,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE_ROLE,1,PAGE_ID,"페이지ID",,"페이지ID",,VARCHAR,36,PAGE_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_PAGE_ROLE,2,ROLE_INFO,"ROLE정보",,"ROLE정보",,VARCHAR,255,ROLE_INFO,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_PAGE_ROLE,3,AUTH_TYPE,"AUTH타입",,"AUTH타입",,VARCHAR,2,AUTH_TYPE,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_PAGE_ROLE,4,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,255,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_PAGE_ROLE,5,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_PNCK_ROLE,1,ROLE_ID,"권한ID",,"권한ID",,VARCHAR,36,ROLE_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_ROLE,2,ROLE_NAME,"권한명",,"권한명",,VARCHAR,255,ROLE_NAME,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_ROLE,3,ROLE_DESC,"롤설명",,"롤설명",,VARCHAR,1000,ROLE_DESC,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_ROLE,4,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,20,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_ROLE,5,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_PNCK_ROLE,6,UPD_ID,"수정자ID",,"수정자ID",,VARCHAR,20,UPD_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_ROLE,7,UPD_DT,"수정일자시간",,"수정일자시간",,TIMESTAMP,6,UPD_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_PNCK_ROLE_AUDIT_LOG,1,CONT_ID,"컨텐트ID",,"컨텐트ID",,VARCHAR,36,CONT_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_ROLE_AUDIT_LOG,2,ROLE_INFO,"권한정보",,"권한정보",,VARCHAR,100,ROLE_INFO,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_ROLE_AUDIT_LOG,3,CONT_TYPE,"컨텐트유형",,"컨텐트유형",,CHAR,1,CONT_TYPE,CHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_ROLE_AUDIT_LOG,4,ACT_TYPE,"실행유형",,"실행유형",,CHAR,1,ACT_TYPE,CHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_ROLE_AUDIT_LOG,5,USR_ID,"사용자ID",,"사용자ID",Y,VARCHAR,32,USR_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_ROLE_AUDIT_LOG,6,USR_IP,"사용자IP",,"사용자IP",,VARCHAR,40,USR_IP,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_ROLE_AUDIT_LOG,7,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,255,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_ROLE_AUDIT_LOG,8,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_PNCK_THEME,1,THEME_ID,"테마ID",,"테마ID",,VARCHAR,36,THEME_ID,VARCHAR,N,Y,20200128,99999999,,
+R001,T_PNCK_THEME,2,THEME_NAME,"테마명",,"테마명",,VARCHAR,255,THEME_NAME,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_THEME,3,THEME_PATH,"테마소스위치",,"테마소스위치",,VARCHAR,255,THEME_PATH,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_THEME,4,THEME_IMG,"테마이미지자원",,"테마이미지자원",,VARCHAR,255,THEME_IMG,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_THEME,5,THEME_DESC,"테마설명",,"테마설명",,VARCHAR,2000,THEME_DESC,VARCHAR,Y,N,20200128,99999999,,
+R001,T_PNCK_THEME,6,DEFAULT_YN,"기본사용유무",,"기본사용유무",,CHAR,1,DEFAULT_YN,CHAR,N,N,20200128,99999999,,
+R001,T_PNCK_THEME,7,REG_ID,"등록자ID",,"등록자ID",,VARCHAR,20,REG_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_THEME,8,REG_DT,"등록일자시간",,"등록일자시간",,TIMESTAMP,6,REG_DT,TIMESTAMP,N,N,20200128,99999999,,
+R001,T_PNCK_THEME,9,UPD_ID,"수정자ID",,"수정자ID",,VARCHAR,20,UPD_ID,VARCHAR,N,N,20200128,99999999,,
+R001,T_PNCK_THEME,10,UPD_DT,"수정일자시간",,"수정일자시간",,TIMESTAMP,6,UPD_DT,TIMESTAMP,N,N,20200128,99999999,,
+template1,getBeachLocationList,0,pubasidx,조사번호,,,,,,,STRING,,,,,,
+template1,getBeachLocationList,1,pubasseq,공유수면지번관리번호,,,,,,,INTEGER,,,,,,
+template1,getBeachLocationList,2,pubasaddress,소재지,,,,,,,STRING,,,,,,
+template1,getBeachLocationList,3,pubaslandarea,면적_지적도(m2),,,,,"5,1",,DECIMAL,,,,,,
+template1,getBeachLocationList,4,pubasconarea,면적_연속도(m2),,,,,"5,1",,DECIMAL,,,,,,
+template1,getBeachLocationList,5,pubasonjibun,인접지번1,,,,,,,STRING,,,,,,
+template1,getBeachLocationList,6,pubastwjibun,인접지번2,,,,,,,STRING,,,,,,
+template1,getBeachLocationList,7,pubasthjibun,인접지번3,,,,,,,STRING,,,,,,
+template1,getBeachLocationList,8,pubasfojibun,인접지번4,,,,,,,STRING,,,,,,
+template1,getBeachLocationList,9,pubasostatus,점유상태코드,,,,,,,INTEGER,,,,,,
+template1,getBeachLocationList,10,pubasostatusnm,점유상태,,,,,,,STRING,,,,,,
+template1,getBeachLocationList,11,pubasareanm,지역,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,0,ORG_ID,기관코드,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,1,TBL_ID,통계표ID,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,2,TBL_NM,통계표명,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,3,C1,분류값 ID1,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,4,C2,분류값 ID2,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,5,C3,분류값 ID3,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,6,C4,분류값 ID4,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,7,C5,분류값 ID5,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,8,C6,분류값 ID6,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,9,C7,분류값 ID7,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,10,C8,분류값 ID8,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,11,C1_OBJ_NM,분류명1,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,12,C2_OBJ_NM,분류명2,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,13,C3_OBJ_NM,분류명3,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,14,C4_OBJ_NM,분류명4,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,15,C5_OBJ_NM,분류명5,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,16,C6_OBJ_NM,분류명6,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,17,C7_OBJ_NM,분류명7,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,18,C8_OBJ_NM,분류명8,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,19,C1_OBJ_NM_ENG,분류 영문명1,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,20,C2_OBJ_NM_ENG,분류 영문명2,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,21,C3_OBJ_NM_ENG,분류 영문명3,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,22,C4_OBJ_NM_ENG,분류 영문명4,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,23,C5_OBJ_NM_ENG,분류 영문명5,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,24,C6_OBJ_NM_ENG,분류 영문명6,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,25,C7_OBJ_NM_ENG,분류 영문명7,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,26,C8_OBJ_NM_ENG,분류 영문명8,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,27,C1_NM,분류값 명1,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,28,C2_NM,분류값 명2,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,29,C3_NM,분류값 명3,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,30,C4_NM,분류값 명4,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,31,C5_NM,분류값 명5,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,32,C6_NM,분류값 명6,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,33,C7_NM,분류값 명7,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,34,C8_NM,분류값 명8,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,35,C1_NM_ENG,분류값 영문명1,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,36,C2_NM_ENG,분류값 영문명2,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,37,C3_NM_ENG,분류값 영문명3,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,38,C4_NM_ENG,분류값 영문명4,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,39,C5_NM_ENG,분류값 영문명5,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,40,C6_NM_ENG,분류값 영문명6,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,41,C7_NM_ENG,분류값 영문명7,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,42,C8_NM_ENG,분류값 영문명8,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,43,ITM_ID,항목 ID,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,44,ITM_NM,항목명,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,45,ITM_NM_ENG,항목영문명,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,46,UNIT_ID,단위ID,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,47,UNIT_NM,단위명,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,48,UNIT_NM_ENG,단위영문명,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,49,PRD_SE,수록주기,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,50,PRD_DE,수록시점,,,,,,,STRING,,,,,,
+template2,DT_435001N_001,51,DT,수치값,,,,,,,INTEGER,,,,,,
+template3,Incheon_West_Restaurant,0,RTR_NM,업소명,,,,,,,STRING,,,,,,
+template3,Incheon_West_Restaurant,1,TYPE,유형,,,,,,,STRING,,,,,,
+template3,Incheon_West_Restaurant,2,LOC,소재지,,,,,,,STRING,,,,,,
+template3,Incheon_West_Restaurant,3,MAINMENU,주메뉴,,,,,,,STRING,,,,,,
+template3,Incheon_West_Restaurant,4,NUM,전화번호,,,,,,,STRING,,,,,,
+template3,Incheon_West_Restaurant,5,LAT,위도,,,,,"10,8",,DECIMAL,,,,,,
+template3,Incheon_West_Restaurant,6,LON,경도,,,,,"10,7",,DECIMAL,,,,,,
+template3,Incheon_West_Restaurant,7,BASE_DT,데이터 기준일자,,,,,,,DATE,,,,,,

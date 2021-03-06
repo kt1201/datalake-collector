@@ -1,0 +1,24 @@
+테이블 불러오기 실패: st_kea_l001.t_daily_yyyymm
+
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "%"
+  Position: 41
+
+테이블 불러오기 성공: st_kea_l001.t_banner_link_mapping
+테이블 불러오기 성공: st_kea_l001.t_binary
+테이블 불러오기 성공: st_kea_l001.t_bookmark
+테이블 불러오기 성공: st_kea_l001.t_code_mgmt
+테이블 불러오기 성공: st_kea_l001.t_eplog
+테이블 불러오기 성공: st_kea_l001.t_groups
+테이블 불러오기 성공: st_kea_l001.t_link
+테이블 불러오기 성공: st_kea_l001.t_link_user
+테이블 불러오기 성공: st_kea_l001.t_noty
+테이블 불러오기 성공: st_kea_l001.t_noty_recv
+테이블 불러오기 성공: st_kea_l001.t_pnck_page
+테이블 불러오기 성공: st_kea_l001.t_pnck_page_portlet_mapping
+테이블 불러오기 성공: st_kea_l001.t_pnck_page_role
+테이블 불러오기 성공: st_kea_l001.t_pnck_role
+테이블 불러오기 성공: st_kea_l001.t_pnck_role_audit_log
+테이블 불러오기 성공: st_kea_l001.t_pnck_theme

@@ -1,0 +1,18 @@
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "%"
+  Position: 44
+public.t_banner_link_mapping	13
+public.t_binary	18
+public.t_bookmark	0
+public.t_code_mgmt	7
+public.t_eplog	428
+public.t_groups	2
+public.t_link	11
+public.t_link_user	0
+public.t_noty	3
+public.t_noty_recv	3
+public.t_pnck_page	23
+public.t_pnck_page_portlet_mapping	31
+public.t_pnck_page_role	22
+public.t_pnck_role	3
+public.t_pnck_role_audit_log	45
+public.t_pnck_theme	9

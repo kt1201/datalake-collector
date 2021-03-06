@@ -1,0 +1,5 @@
+L001,"KEA통합포털",01,"내부 정형 데이터",06,PostgreSQL,public,st_kea_l001,hadoop,127.0.0.1,5432,,,hadoop,,,,,,,,,,1,"업무망",01,"적용",20200128,99999999,,
+R001,"KEA통합포털",01,"내부 정형 데이터",00,SQLite,,st_kea_r001,test/data/target.db,,,,,,,,,,,,,,,1,"업무망",01,"적용",20200128,99999999,,
+template1,공공포털시스템_해양수산부_바닷가관리정보,02,"외부 정형 데이터",06,PostgreSQL,,st_api_001,hadoop,127.0.0.1,5432,,,hadoop,,,,,,,,{"serviceKey":"ceLKZ34NoTuwf0WwEvVTAeO3QDYWw+WVch+ZYwACCCs2uWktoNMndaw+4YawgjRlhpz/Z0/I4xsK/O9ts2Rkww=="},http://apis.data.go.kr/1192000/beachInfoService,02,DMZ,01,적용,,,,
+template2,국가통계포털_월간 국내카드승인실적,02,"외부 정형 데이터",00,SQLite,,st_api_002,,,,,,,,,,,,,,"{""apiKey"":""MWU0NjJjZjQ3M2JmYjViNDYyM2M1ZGE3NmY2OGJiZGM="", ""userStatsId"":""assam258/435/DT_435001N_001/2/1/20210224162443""}",https://kosis.kr/openapi/statisticsData.do,02,DMZ,01,적용,,,,
+template3,공공데이터포털_인천광역시 서구 맛집,02,"외부 정형 데이터",00,SQLite,,st_api_003,,,,,,,,,,,,doc/dat/sample.csv,,,,02,DMZ,01,적용,,,,
